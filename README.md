@@ -2,7 +2,7 @@
 
 A Claude Code plugin that rotates an English word, its Dutch translation, a
 phonetic pronunciation, and (where available) an English definition in your
-terminal status line — e.g.
+terminal status line. For example:
 
 ```
 fence → schutting  [skhuting] | a barrier that serves to enclose an area
@@ -40,20 +40,20 @@ you the exact config change, and writes it after you confirm.
 
 ## How it works
 
-- `data/dutch-words.json` — ~300 hand-verified core words/phrases
-  (`scripts/seed-words.json`) plus ~20,500 more extracted from the FreeDict
-  Dutch-English dictionary (`scripts/extract-freedict.py` —
+- `data/dutch-words.json`: about 300 hand-verified core words and phrases
+  (`scripts/seed-words.json`), plus roughly 20,500 more pulled from the
+  FreeDict Dutch-English dictionary (`scripts/extract-freedict.py`;
   see [NOTICE.md](NOTICE.md) for licensing). Phonetic respellings for
-  everything are derived uniformly from espeak-ng's Dutch voice
-  (`scripts/build-wordlist.js`). English definitions, where WordNet has a
-  clean match (~86% of entries), come from `scripts/add-meanings.py`. No
-  network or extra tools needed at runtime — this is all baked in once.
-- `bin/vocabline.js` — reads that file and deterministically picks the
+  everything come from espeak-ng's Dutch voice (`scripts/build-wordlist.js`),
+  and English definitions, where WordNet has a clean match (about 86% of
+  entries), come from `scripts/add-meanings.py`. None of this needs network
+  access or extra tools at runtime, since it's all baked in ahead of time.
+- `bin/vocabline.js`: reads that file and deterministically picks the
   current word from wall-clock time (`floor(now / 25s) % wordlist.length`).
-  Fails silently (empty output) rather than leaking an error into the status
-  line.
-- `SKILL.md` — the `/vocabline:setup` command that wires the script into
-  your status line config.
+  If anything goes wrong it fails silently instead of leaking an error into
+  the status line.
+- `SKILL.md`: the `/vocabline:setup` command that wires the script into your
+  status line config.
 
 ## Regenerating the word list
 
