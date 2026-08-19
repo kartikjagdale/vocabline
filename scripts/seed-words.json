@@ -1,0 +1,1202 @@
+[
+  {
+    "dutch": "ik",
+    "english": "I"
+  },
+  {
+    "dutch": "jij",
+    "english": "you (informal)"
+  },
+  {
+    "dutch": "je",
+    "english": "you (informal, short)"
+  },
+  {
+    "dutch": "u",
+    "english": "you (formal)"
+  },
+  {
+    "dutch": "hij",
+    "english": "he"
+  },
+  {
+    "dutch": "zij",
+    "english": "she"
+  },
+  {
+    "dutch": "ze",
+    "english": "she/they (short)"
+  },
+  {
+    "dutch": "het",
+    "english": "it"
+  },
+  {
+    "dutch": "wij",
+    "english": "we"
+  },
+  {
+    "dutch": "we",
+    "english": "we (short)"
+  },
+  {
+    "dutch": "jullie",
+    "english": "you (plural)"
+  },
+  {
+    "dutch": "jouw",
+    "english": "your (informal)"
+  },
+  {
+    "dutch": "mijn",
+    "english": "my"
+  },
+  {
+    "dutch": "haar",
+    "english": "her"
+  },
+  {
+    "dutch": "ons",
+    "english": "our"
+  },
+  {
+    "dutch": "onze",
+    "english": "our (plural noun)"
+  },
+  {
+    "dutch": "hun",
+    "english": "their"
+  },
+  {
+    "dutch": "mij",
+    "english": "me"
+  },
+  {
+    "dutch": "hem",
+    "english": "him"
+  },
+  {
+    "dutch": "elkaar",
+    "english": "each other"
+  },
+  {
+    "dutch": "zijn",
+    "english": "to be"
+  },
+  {
+    "dutch": "hebben",
+    "english": "to have"
+  },
+  {
+    "dutch": "gaan",
+    "english": "to go"
+  },
+  {
+    "dutch": "doen",
+    "english": "to do"
+  },
+  {
+    "dutch": "komen",
+    "english": "to come"
+  },
+  {
+    "dutch": "willen",
+    "english": "to want"
+  },
+  {
+    "dutch": "kunnen",
+    "english": "to be able to / can"
+  },
+  {
+    "dutch": "moeten",
+    "english": "to have to / must"
+  },
+  {
+    "dutch": "mogen",
+    "english": "to be allowed to / may"
+  },
+  {
+    "dutch": "zien",
+    "english": "to see"
+  },
+  {
+    "dutch": "weten",
+    "english": "to know"
+  },
+  {
+    "dutch": "maken",
+    "english": "to make"
+  },
+  {
+    "dutch": "geven",
+    "english": "to give"
+  },
+  {
+    "dutch": "nemen",
+    "english": "to take"
+  },
+  {
+    "dutch": "zeggen",
+    "english": "to say"
+  },
+  {
+    "dutch": "denken",
+    "english": "to think"
+  },
+  {
+    "dutch": "vinden",
+    "english": "to find / think"
+  },
+  {
+    "dutch": "werken",
+    "english": "to work"
+  },
+  {
+    "dutch": "wonen",
+    "english": "to live (reside)"
+  },
+  {
+    "dutch": "eten",
+    "english": "to eat"
+  },
+  {
+    "dutch": "drinken",
+    "english": "to drink"
+  },
+  {
+    "dutch": "slapen",
+    "english": "to sleep"
+  },
+  {
+    "dutch": "lopen",
+    "english": "to walk"
+  },
+  {
+    "dutch": "praten",
+    "english": "to talk"
+  },
+  {
+    "dutch": "kopen",
+    "english": "to buy"
+  },
+  {
+    "dutch": "betalen",
+    "english": "to pay"
+  },
+  {
+    "dutch": "lezen",
+    "english": "to read"
+  },
+  {
+    "dutch": "schrijven",
+    "english": "to write"
+  },
+  {
+    "dutch": "spelen",
+    "english": "to play"
+  },
+  {
+    "dutch": "helpen",
+    "english": "to help"
+  },
+  {
+    "dutch": "houden van",
+    "english": "to love / like"
+  },
+  {
+    "dutch": "ben",
+    "english": "am"
+  },
+  {
+    "dutch": "bent",
+    "english": "are (informal)"
+  },
+  {
+    "dutch": "is",
+    "english": "is"
+  },
+  {
+    "dutch": "was",
+    "english": "was"
+  },
+  {
+    "dutch": "heb",
+    "english": "have (I)"
+  },
+  {
+    "dutch": "hebt",
+    "english": "have (you)"
+  },
+  {
+    "dutch": "heeft",
+    "english": "has"
+  },
+  {
+    "dutch": "had",
+    "english": "had"
+  },
+  {
+    "dutch": "hadden",
+    "english": "had (plural)"
+  },
+  {
+    "dutch": "ga",
+    "english": "go (I)"
+  },
+  {
+    "dutch": "gaat",
+    "english": "goes"
+  },
+  {
+    "dutch": "ging",
+    "english": "went"
+  },
+  {
+    "dutch": "doe",
+    "english": "do (I)"
+  },
+  {
+    "dutch": "doet",
+    "english": "does"
+  },
+  {
+    "dutch": "deed",
+    "english": "did"
+  },
+  {
+    "dutch": "kom",
+    "english": "come (I)"
+  },
+  {
+    "dutch": "komt",
+    "english": "comes"
+  },
+  {
+    "dutch": "kwam",
+    "english": "came"
+  },
+  {
+    "dutch": "wil",
+    "english": "want (I)"
+  },
+  {
+    "dutch": "wilt",
+    "english": "want (you)"
+  },
+  {
+    "dutch": "wilde",
+    "english": "wanted"
+  },
+  {
+    "dutch": "kan",
+    "english": "can"
+  },
+  {
+    "dutch": "kon",
+    "english": "could"
+  },
+  {
+    "dutch": "moet",
+    "english": "must"
+  },
+  {
+    "dutch": "moest",
+    "english": "had to"
+  },
+  {
+    "dutch": "mag",
+    "english": "may"
+  },
+  {
+    "dutch": "mocht",
+    "english": "was allowed to"
+  },
+  {
+    "dutch": "zie",
+    "english": "see (I)"
+  },
+  {
+    "dutch": "ziet",
+    "english": "sees"
+  },
+  {
+    "dutch": "zag",
+    "english": "saw"
+  },
+  {
+    "dutch": "weet",
+    "english": "know (I)"
+  },
+  {
+    "dutch": "wist",
+    "english": "knew"
+  },
+  {
+    "dutch": "maak",
+    "english": "make (I)"
+  },
+  {
+    "dutch": "maakt",
+    "english": "makes"
+  },
+  {
+    "dutch": "geef",
+    "english": "give (I)"
+  },
+  {
+    "dutch": "geeft",
+    "english": "gives"
+  },
+  {
+    "dutch": "gaf",
+    "english": "gave"
+  },
+  {
+    "dutch": "neem",
+    "english": "take (I)"
+  },
+  {
+    "dutch": "neemt",
+    "english": "takes"
+  },
+  {
+    "dutch": "nam",
+    "english": "took"
+  },
+  {
+    "dutch": "zeg",
+    "english": "say (I)"
+  },
+  {
+    "dutch": "zegt",
+    "english": "says"
+  },
+  {
+    "dutch": "zei",
+    "english": "said"
+  },
+  {
+    "dutch": "denkt",
+    "english": "thinks"
+  },
+  {
+    "dutch": "een",
+    "english": "one"
+  },
+  {
+    "dutch": "twee",
+    "english": "two"
+  },
+  {
+    "dutch": "drie",
+    "english": "three"
+  },
+  {
+    "dutch": "vier",
+    "english": "four"
+  },
+  {
+    "dutch": "vijf",
+    "english": "five"
+  },
+  {
+    "dutch": "zes",
+    "english": "six"
+  },
+  {
+    "dutch": "zeven",
+    "english": "seven"
+  },
+  {
+    "dutch": "acht",
+    "english": "eight"
+  },
+  {
+    "dutch": "negen",
+    "english": "nine"
+  },
+  {
+    "dutch": "tien",
+    "english": "ten"
+  },
+  {
+    "dutch": "elf",
+    "english": "eleven"
+  },
+  {
+    "dutch": "twaalf",
+    "english": "twelve"
+  },
+  {
+    "dutch": "dertien",
+    "english": "thirteen"
+  },
+  {
+    "dutch": "veertien",
+    "english": "fourteen"
+  },
+  {
+    "dutch": "vijftien",
+    "english": "fifteen"
+  },
+  {
+    "dutch": "zestien",
+    "english": "sixteen"
+  },
+  {
+    "dutch": "zeventien",
+    "english": "seventeen"
+  },
+  {
+    "dutch": "achttien",
+    "english": "eighteen"
+  },
+  {
+    "dutch": "negentien",
+    "english": "nineteen"
+  },
+  {
+    "dutch": "twintig",
+    "english": "twenty"
+  },
+  {
+    "dutch": "dertig",
+    "english": "thirty"
+  },
+  {
+    "dutch": "veertig",
+    "english": "forty"
+  },
+  {
+    "dutch": "vijftig",
+    "english": "fifty"
+  },
+  {
+    "dutch": "honderd",
+    "english": "one hundred"
+  },
+  {
+    "dutch": "duizend",
+    "english": "one thousand"
+  },
+  {
+    "dutch": "maandag",
+    "english": "Monday"
+  },
+  {
+    "dutch": "dinsdag",
+    "english": "Tuesday"
+  },
+  {
+    "dutch": "woensdag",
+    "english": "Wednesday"
+  },
+  {
+    "dutch": "donderdag",
+    "english": "Thursday"
+  },
+  {
+    "dutch": "vrijdag",
+    "english": "Friday"
+  },
+  {
+    "dutch": "zaterdag",
+    "english": "Saturday"
+  },
+  {
+    "dutch": "zondag",
+    "english": "Sunday"
+  },
+  {
+    "dutch": "januari",
+    "english": "January"
+  },
+  {
+    "dutch": "februari",
+    "english": "February"
+  },
+  {
+    "dutch": "maart",
+    "english": "March"
+  },
+  {
+    "dutch": "april",
+    "english": "April"
+  },
+  {
+    "dutch": "mei",
+    "english": "May"
+  },
+  {
+    "dutch": "juni",
+    "english": "June"
+  },
+  {
+    "dutch": "juli",
+    "english": "July"
+  },
+  {
+    "dutch": "augustus",
+    "english": "August"
+  },
+  {
+    "dutch": "september",
+    "english": "September"
+  },
+  {
+    "dutch": "oktober",
+    "english": "October"
+  },
+  {
+    "dutch": "november",
+    "english": "November"
+  },
+  {
+    "dutch": "december",
+    "english": "December"
+  },
+  {
+    "dutch": "vandaag",
+    "english": "today"
+  },
+  {
+    "dutch": "morgen",
+    "english": "tomorrow"
+  },
+  {
+    "dutch": "gisteren",
+    "english": "yesterday"
+  },
+  {
+    "dutch": "nu",
+    "english": "now"
+  },
+  {
+    "dutch": "later",
+    "english": "later"
+  },
+  {
+    "dutch": "altijd",
+    "english": "always"
+  },
+  {
+    "dutch": "nooit",
+    "english": "never"
+  },
+  {
+    "dutch": "soms",
+    "english": "sometimes"
+  },
+  {
+    "dutch": "vaak",
+    "english": "often"
+  },
+  {
+    "dutch": "straks",
+    "english": "in a bit"
+  },
+  {
+    "dutch": "week",
+    "english": "week"
+  },
+  {
+    "dutch": "maand",
+    "english": "month"
+  },
+  {
+    "dutch": "jaar",
+    "english": "year"
+  },
+  {
+    "dutch": "uur",
+    "english": "hour"
+  },
+  {
+    "dutch": "vandaag de dag",
+    "english": "nowadays"
+  },
+  {
+    "dutch": "wie",
+    "english": "who"
+  },
+  {
+    "dutch": "wat",
+    "english": "what"
+  },
+  {
+    "dutch": "waar",
+    "english": "where"
+  },
+  {
+    "dutch": "wanneer",
+    "english": "when"
+  },
+  {
+    "dutch": "waarom",
+    "english": "why"
+  },
+  {
+    "dutch": "hoe",
+    "english": "how"
+  },
+  {
+    "dutch": "welke",
+    "english": "which"
+  },
+  {
+    "dutch": "welk",
+    "english": "which (neuter)"
+  },
+  {
+    "dutch": "hoeveel",
+    "english": "how much/many"
+  },
+  {
+    "dutch": "moeder",
+    "english": "mother"
+  },
+  {
+    "dutch": "vader",
+    "english": "father"
+  },
+  {
+    "dutch": "broer",
+    "english": "brother"
+  },
+  {
+    "dutch": "zus",
+    "english": "sister"
+  },
+  {
+    "dutch": "kind",
+    "english": "child"
+  },
+  {
+    "dutch": "kinderen",
+    "english": "children"
+  },
+  {
+    "dutch": "vriend",
+    "english": "friend (male)"
+  },
+  {
+    "dutch": "vriendin",
+    "english": "friend (female) / girlfriend"
+  },
+  {
+    "dutch": "familie",
+    "english": "family"
+  },
+  {
+    "dutch": "man",
+    "english": "man / husband"
+  },
+  {
+    "dutch": "vrouw",
+    "english": "woman / wife"
+  },
+  {
+    "dutch": "zoon",
+    "english": "son"
+  },
+  {
+    "dutch": "dochter",
+    "english": "daughter"
+  },
+  {
+    "dutch": "oma",
+    "english": "grandmother"
+  },
+  {
+    "dutch": "opa",
+    "english": "grandfather"
+  },
+  {
+    "dutch": "water",
+    "english": "water"
+  },
+  {
+    "dutch": "brood",
+    "english": "bread"
+  },
+  {
+    "dutch": "koffie",
+    "english": "coffee"
+  },
+  {
+    "dutch": "thee",
+    "english": "tea"
+  },
+  {
+    "dutch": "melk",
+    "english": "milk"
+  },
+  {
+    "dutch": "kaas",
+    "english": "cheese"
+  },
+  {
+    "dutch": "appel",
+    "english": "apple"
+  },
+  {
+    "dutch": "ontbijt",
+    "english": "breakfast"
+  },
+  {
+    "dutch": "lunch",
+    "english": "lunch"
+  },
+  {
+    "dutch": "avondeten",
+    "english": "dinner"
+  },
+  {
+    "dutch": "vlees",
+    "english": "meat"
+  },
+  {
+    "dutch": "groente",
+    "english": "vegetables"
+  },
+  {
+    "dutch": "fruit",
+    "english": "fruit"
+  },
+  {
+    "dutch": "ei",
+    "english": "egg"
+  },
+  {
+    "dutch": "suiker",
+    "english": "sugar"
+  },
+  {
+    "dutch": "zout",
+    "english": "salt"
+  },
+  {
+    "dutch": "boter",
+    "english": "butter"
+  },
+  {
+    "dutch": "bier",
+    "english": "beer"
+  },
+  {
+    "dutch": "groot",
+    "english": "big"
+  },
+  {
+    "dutch": "klein",
+    "english": "small"
+  },
+  {
+    "dutch": "goed",
+    "english": "good"
+  },
+  {
+    "dutch": "slecht",
+    "english": "bad"
+  },
+  {
+    "dutch": "mooi",
+    "english": "beautiful"
+  },
+  {
+    "dutch": "lelijk",
+    "english": "ugly"
+  },
+  {
+    "dutch": "snel",
+    "english": "fast"
+  },
+  {
+    "dutch": "langzaam",
+    "english": "slow"
+  },
+  {
+    "dutch": "warm",
+    "english": "warm"
+  },
+  {
+    "dutch": "koud",
+    "english": "cold"
+  },
+  {
+    "dutch": "nieuw",
+    "english": "new"
+  },
+  {
+    "dutch": "oud",
+    "english": "old"
+  },
+  {
+    "dutch": "makkelijk",
+    "english": "easy"
+  },
+  {
+    "dutch": "moeilijk",
+    "english": "difficult"
+  },
+  {
+    "dutch": "gelukkig",
+    "english": "happy"
+  },
+  {
+    "dutch": "verdrietig",
+    "english": "sad"
+  },
+  {
+    "dutch": "boos",
+    "english": "angry"
+  },
+  {
+    "dutch": "moe",
+    "english": "tired"
+  },
+  {
+    "dutch": "gezond",
+    "english": "healthy"
+  },
+  {
+    "dutch": "ziek",
+    "english": "sick"
+  },
+  {
+    "dutch": "duur",
+    "english": "expensive"
+  },
+  {
+    "dutch": "goedkoop",
+    "english": "cheap"
+  },
+  {
+    "dutch": "schoon",
+    "english": "clean"
+  },
+  {
+    "dutch": "sterk",
+    "english": "strong"
+  },
+  {
+    "dutch": "leuk",
+    "english": "nice / fun"
+  },
+  {
+    "dutch": "huis",
+    "english": "house"
+  },
+  {
+    "dutch": "auto",
+    "english": "car"
+  },
+  {
+    "dutch": "straat",
+    "english": "street"
+  },
+  {
+    "dutch": "stad",
+    "english": "city"
+  },
+  {
+    "dutch": "land",
+    "english": "country"
+  },
+  {
+    "dutch": "school",
+    "english": "school"
+  },
+  {
+    "dutch": "werk",
+    "english": "work"
+  },
+  {
+    "dutch": "tijd",
+    "english": "time"
+  },
+  {
+    "dutch": "geld",
+    "english": "money"
+  },
+  {
+    "dutch": "boek",
+    "english": "book"
+  },
+  {
+    "dutch": "tafel",
+    "english": "table"
+  },
+  {
+    "dutch": "stoel",
+    "english": "chair"
+  },
+  {
+    "dutch": "deur",
+    "english": "door"
+  },
+  {
+    "dutch": "raam",
+    "english": "window"
+  },
+  {
+    "dutch": "telefoon",
+    "english": "phone"
+  },
+  {
+    "dutch": "computer",
+    "english": "computer"
+  },
+  {
+    "dutch": "tas",
+    "english": "bag"
+  },
+  {
+    "dutch": "kleren",
+    "english": "clothes"
+  },
+  {
+    "dutch": "schoen",
+    "english": "shoe"
+  },
+  {
+    "dutch": "bed",
+    "english": "bed"
+  },
+  {
+    "dutch": "keuken",
+    "english": "kitchen"
+  },
+  {
+    "dutch": "badkamer",
+    "english": "bathroom"
+  },
+  {
+    "dutch": "kamer",
+    "english": "room"
+  },
+  {
+    "dutch": "winkel",
+    "english": "shop"
+  },
+  {
+    "dutch": "markt",
+    "english": "market"
+  },
+  {
+    "dutch": "park",
+    "english": "park"
+  },
+  {
+    "dutch": "station",
+    "english": "station"
+  },
+  {
+    "dutch": "ziekenhuis",
+    "english": "hospital"
+  },
+  {
+    "dutch": "restaurant",
+    "english": "restaurant"
+  },
+  {
+    "dutch": "trein",
+    "english": "train"
+  },
+  {
+    "dutch": "bus",
+    "english": "bus"
+  },
+  {
+    "dutch": "fiets",
+    "english": "bicycle"
+  },
+  {
+    "dutch": "vliegtuig",
+    "english": "airplane"
+  },
+  {
+    "dutch": "weg",
+    "english": "road"
+  },
+  {
+    "dutch": "wereld",
+    "english": "world"
+  },
+  {
+    "dutch": "in",
+    "english": "in"
+  },
+  {
+    "dutch": "op",
+    "english": "on"
+  },
+  {
+    "dutch": "aan",
+    "english": "on / to"
+  },
+  {
+    "dutch": "met",
+    "english": "with"
+  },
+  {
+    "dutch": "van",
+    "english": "of / from"
+  },
+  {
+    "dutch": "voor",
+    "english": "for / before / in front of"
+  },
+  {
+    "dutch": "na",
+    "english": "after"
+  },
+  {
+    "dutch": "door",
+    "english": "through / by"
+  },
+  {
+    "dutch": "over",
+    "english": "over / about"
+  },
+  {
+    "dutch": "onder",
+    "english": "under"
+  },
+  {
+    "dutch": "en",
+    "english": "and"
+  },
+  {
+    "dutch": "maar",
+    "english": "but"
+  },
+  {
+    "dutch": "of",
+    "english": "or"
+  },
+  {
+    "dutch": "want",
+    "english": "because (coord.)"
+  },
+  {
+    "dutch": "dus",
+    "english": "so"
+  },
+  {
+    "dutch": "ook",
+    "english": "also"
+  },
+  {
+    "dutch": "niet",
+    "english": "not"
+  },
+  {
+    "dutch": "hier",
+    "english": "here"
+  },
+  {
+    "dutch": "daar",
+    "english": "there"
+  },
+  {
+    "dutch": "boven",
+    "english": "above"
+  },
+  {
+    "dutch": "tussen",
+    "english": "between"
+  },
+  {
+    "dutch": "naast",
+    "english": "next to"
+  },
+  {
+    "dutch": "achter",
+    "english": "behind"
+  },
+  {
+    "dutch": "bij",
+    "english": "at / near"
+  },
+  {
+    "dutch": "zonder",
+    "english": "without"
+  },
+  {
+    "dutch": "goedemorgen",
+    "english": "good morning"
+  },
+  {
+    "dutch": "goedemiddag",
+    "english": "good afternoon"
+  },
+  {
+    "dutch": "goedenavond",
+    "english": "good evening"
+  },
+  {
+    "dutch": "goedenacht",
+    "english": "good night"
+  },
+  {
+    "dutch": "dank je wel",
+    "english": "thank you"
+  },
+  {
+    "dutch": "alsjeblieft",
+    "english": "please / here you go"
+  },
+  {
+    "dutch": "tot ziens",
+    "english": "goodbye"
+  },
+  {
+    "dutch": "hoe gaat het",
+    "english": "how are you"
+  },
+  {
+    "dutch": "hallo",
+    "english": "hello"
+  },
+  {
+    "dutch": "dag",
+    "english": "bye / hi"
+  },
+  {
+    "dutch": "welkom",
+    "english": "welcome"
+  },
+  {
+    "dutch": "sorry",
+    "english": "sorry"
+  },
+  {
+    "dutch": "pardon",
+    "english": "excuse me"
+  },
+  {
+    "dutch": "graag gedaan",
+    "english": "you're welcome"
+  },
+  {
+    "dutch": "het spijt me",
+    "english": "I'm sorry"
+  },
+  {
+    "dutch": "boom",
+    "english": "tree"
+  },
+  {
+    "dutch": "hond",
+    "english": "dog"
+  },
+  {
+    "dutch": "zon",
+    "english": "sun"
+  },
+  {
+    "dutch": "kleur",
+    "english": "color"
+  }
+]
