@@ -55,7 +55,11 @@ you the exact config change, and writes it after you confirm.
 - `SKILL.md`: the `/vocabline:setup` command that wires the script into your
   status line config.
 
-## Regenerating the word list
+## Regenerating the word list (maintainers only)
+
+`data/dutch-words.json` already ships prebuilt in this repo, so installing
+the plugin is enough on its own; you never need anything below this point.
+It's only for rebuilding or expanding that file from scratch.
 
 Requires `espeak-ng` (`brew install espeak-ng`) and:
 `pip install pyglossary beautifulsoup4 wordfreq wordninja nltk`, plus the
