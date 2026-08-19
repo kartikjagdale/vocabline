@@ -40,20 +40,37 @@ you the exact config change, and writes it after you confirm.
 
 ## How it works
 
-- `data/dutch-words.json`: about 300 hand-verified core words and phrases
-  (`scripts/seed-words.json`), plus roughly 20,500 more pulled from the
-  FreeDict Dutch-English dictionary (`scripts/extract-freedict.py`;
-  see [NOTICE.md](NOTICE.md) for licensing). Phonetic respellings for
-  everything come from espeak-ng's Dutch voice (`scripts/build-wordlist.js`),
-  and English definitions, where WordNet has a clean match (about 86% of
-  entries), come from `scripts/add-meanings.py`. None of this needs network
-  access or extra tools at runtime, since it's all baked in ahead of time.
-- `bin/vocabline.js`: reads that file and deterministically picks the
-  current word from wall-clock time (`floor(now / 25s) % wordlist.length`).
-  If anything goes wrong it fails silently instead of leaking an error into
-  the status line.
-- `SKILL.md`: the `/vocabline:setup` command that wires the script into your
-  status line config.
+**`data/dutch-words.json`**
+
+The word list itself:
+
+- About 300 hand-verified core words and phrases (`scripts/seed-words.json`)
+- Roughly 20,500 more pulled from the FreeDict Dutch-English dictionary
+  (`scripts/extract-freedict.py`; see [NOTICE.md](NOTICE.md) for licensing)
+- Phonetic respellings for everything, from espeak-ng's Dutch voice
+  (`scripts/build-wordlist.js`)
+- English definitions, from WordNet, where there's a clean match
+  (`scripts/add-meanings.py`, about 86% of entries)
+
+None of this needs network access or extra tools at runtime. It's all baked
+in ahead of time.
+
+**`bin/vocabline.js`**
+
+Reads that file and deterministically picks the current word from
+wall-clock time:
+
+```
+index = floor(now / 25s) % wordlist.length
+```
+
+If anything goes wrong, it fails silently instead of leaking an error into
+the status line.
+
+**`SKILL.md`**
+
+The `/vocabline:setup` command that wires the script into your status line
+config.
 
 ## Regenerating the word list (maintainers only)
 
@@ -61,11 +78,31 @@ you the exact config change, and writes it after you confirm.
 the plugin is enough on its own; you never need anything below this point.
 It's only for rebuilding or expanding that file from scratch.
 
-Requires `espeak-ng` (`brew install espeak-ng`) and:
-`pip install pyglossary beautifulsoup4 wordfreq wordninja nltk`, plus the
-FreeDict `nld-eng` StarDict archive from https://freedict.org/downloads/
-extracted to `/tmp/nld-eng/`, plus WordNet data
-(`python3 -c "import nltk; nltk.download('wordnet'); nltk.download('omw-1.4')"`):
+Requirements:
+
+- `espeak-ng`:
+
+  ```
+  brew install espeak-ng
+  ```
+
+- Python packages:
+
+  ```
+  pip install pyglossary beautifulsoup4 wordfreq wordninja nltk
+  ```
+
+- The FreeDict `nld-eng` StarDict archive, downloaded from
+  [freedict.org/downloads](https://freedict.org/downloads/) and extracted
+  to `/tmp/nld-eng/`
+
+- WordNet data:
+
+  ```
+  python3 -c "import nltk; nltk.download('wordnet'); nltk.download('omw-1.4')"
+  ```
+
+Then run, in order:
 
 ```
 python3 scripts/extract-freedict.py   # regenerate scripts/freedict-words.json
