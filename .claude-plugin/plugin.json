@@ -1,15 +1,15 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
-  "name": "dutch-vocab-statusline",
-  "description": "Rotates a Dutch word, its English translation, and a phonetic pronunciation in your terminal status line while you use Claude Code.",
+  "name": "vocabline",
+  "description": "Rotates an English word, its Dutch translation, pronunciation, and meaning in your terminal status line while you use Claude Code.",
   "version": "0.2.0",
   "author": {
     "name": "Kartik Jagdale",
     "email": "kartikjagdale11@gmail.com",
     "url": "https://github.com/kartikjagdale"
   },
-  "homepage": "https://github.com/kartikjagdale/dutch-vocab-statusline",
-  "repository": "https://github.com/kartikjagdale/dutch-vocab-statusline",
+  "homepage": "https://github.com/kartikjagdale/vocabline",
+  "repository": "https://github.com/kartikjagdale/vocabline",
   "license": "MIT",
   "keywords": ["dutch", "language-learning", "statusline", "vocabulary"]
 }

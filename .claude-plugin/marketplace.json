@@ -1,16 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
-  "name": "dutch-vocab-statusline-marketplace",
+  "name": "vocabline-marketplace",
   "owner": {
     "name": "Kartik Jagdale",
     "url": "https://github.com/kartikjagdale"
   },
-  "description": "Marketplace for the Dutch Vocab Statusline plugin.",
+  "description": "Marketplace for the Vocabline plugin.",
   "plugins": [
     {
-      "name": "dutch-vocab-statusline",
+      "name": "vocabline",
       "source": "./",
-      "description": "Rotates a Dutch word, its English translation, and a phonetic pronunciation in your terminal status line while you use Claude Code.",
+      "description": "Rotates an English word, its Dutch translation, pronunciation, and meaning in your terminal status line while you use Claude Code.",
       "license": "MIT",
       "keywords": ["dutch", "language-learning", "statusline", "vocabulary"]
     }

@@ -1,15 +1,16 @@
 ---
 name: setup
-description: One-time setup for the Dutch Vocab Statusline plugin. Wires the rotating Dutch word/English translation/pronunciation widget into the user's Claude Code status line. Run this once right after installing the plugin, or whenever the user asks to set up, enable, or reconfigure the Dutch vocab statusline.
+description: One-time setup for the Vocabline plugin. Wires the rotating English/Dutch vocabulary widget into the user's Claude Code status line. Run this once right after installing the plugin, or whenever the user asks to set up, enable, or reconfigure Vocabline.
 disable-model-invocation: true
 allowed-tools: Read, Edit, Write, Bash
 ---
 
-You are wiring up the Dutch Vocab Statusline plugin. The plugin ships a runtime
-script at `${CLAUDE_PLUGIN_ROOT}/bin/dutch-word.js` (executable, takes no
-arguments, prints one line like `huis → house  /hoois/`, deterministic from
-wall-clock time — no side effects, safe to run repeatedly). Your job is to
-make Claude Code's status line invoke that script.
+You are wiring up the Vocabline plugin. The plugin ships a runtime script at
+`${CLAUDE_PLUGIN_ROOT}/bin/vocabline.js` (executable, takes no arguments,
+prints one line like `house → huis  [huys] | a dwelling that serves as
+living quarters for one or more families`, deterministic from wall-clock
+time — no side effects, safe to run repeatedly). Your job is to make Claude
+Code's status line invoke that script.
 
 Resolve `${CLAUDE_PLUGIN_ROOT}` to its actual absolute path first (e.g. via
 `echo`), and always write the literal resolved absolute path into any config
@@ -39,9 +40,9 @@ Follow these steps:
      has a ready-made empty third line):
      ```json
      {
-       "id": "dutch-vocab-statusline",
+       "id": "vocabline",
        "type": "custom-command",
-       "commandPath": "<resolved absolute path>/bin/dutch-word.js",
+       "commandPath": "<resolved absolute path>/bin/vocabline.js",
        "timeout": 500,
        "color": "cyan"
      }
@@ -57,7 +58,7 @@ Follow these steps:
      ```json
      "statusLine": {
        "type": "command",
-       "command": "node <resolved absolute path>/bin/dutch-word.js",
+       "command": "node <resolved absolute path>/bin/vocabline.js",
        "refreshInterval": 25
      }
      ```
@@ -68,13 +69,14 @@ Follow these steps:
    - Do NOT overwrite their existing `statusLine`. Explain what's currently
      configured and ask the user how they'd like to proceed: e.g. wrap their
      existing command in a small shell script that runs it and then appends
-     a newline with `node <path>/bin/dutch-word.js`'s output, or have them
+     a newline with `node <path>/bin/vocabline.js`'s output, or have them
      add it manually. Only proceed once they've told you which they want.
 
 5. **Verify.** After writing, run the script directly
-   (`node <resolved path>/bin/dutch-word.js`) to confirm it prints a line
-   like `huis → house  /hoois/` with no errors, and tell the user the
-   status line will pick it up on its next refresh (within ~25s, or after
+   (`node <resolved path>/bin/vocabline.js`) to confirm it prints a line
+   like `house → huis  [huys] | a dwelling that serves as living quarters
+   for one or more families` with no errors, and tell the user the status
+   line will pick it up on its next refresh (within ~25s, or after
    restarting/reopening their terminal if it doesn't auto-refresh).
 
 If the user later asks to uninstall/undo, restore the `.bak` file you created

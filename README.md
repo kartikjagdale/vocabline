@@ -1,4 +1,4 @@
-# Dutch Vocab Statusline
+# Vocabline
 
 A Claude Code plugin that rotates an English word, its Dutch translation, a
 phonetic pronunciation, and (where available) an English definition in your
@@ -18,21 +18,21 @@ already use it.
 From inside Claude Code, in any session:
 
 ```
-/plugin marketplace add kartikjagdale/dutch-vocab-statusline
-/plugin install dutch-vocab-statusline@dutch-vocab-statusline-marketplace
+/plugin marketplace add kartikjagdale/vocabline
+/plugin install vocabline@vocabline-marketplace
 ```
 
 Or, from a local clone (no GitHub required):
 
 ```
-/plugin marketplace add /path/to/dutch-vocab-statusline
-/plugin install dutch-vocab-statusline@dutch-vocab-statusline-marketplace
+/plugin marketplace add /path/to/vocabline
+/plugin install vocabline@vocabline-marketplace
 ```
 
 Then run the one-time setup command:
 
 ```
-/dutch-vocab-statusline:setup
+/vocabline:setup
 ```
 
 This detects whether you use `ccstatusline` or a plain `statusLine`, shows
@@ -48,12 +48,12 @@ you the exact config change, and writes it after you confirm.
   (`scripts/build-wordlist.js`). English definitions, where WordNet has a
   clean match (~86% of entries), come from `scripts/add-meanings.py`. No
   network or extra tools needed at runtime — this is all baked in once.
-- `bin/dutch-word.js` — reads that file and deterministically picks the
+- `bin/vocabline.js` — reads that file and deterministically picks the
   current word from wall-clock time (`floor(now / 25s) % wordlist.length`).
   Fails silently (empty output) rather than leaking an error into the status
   line.
-- `SKILL.md` — the `/dutch-vocab-statusline:setup` command that wires the
-  script into your status line config.
+- `SKILL.md` — the `/vocabline:setup` command that wires the script into
+  your status line config.
 
 ## Regenerating the word list
 
