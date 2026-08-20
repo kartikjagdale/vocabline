@@ -1,6 +1,6 @@
 ---
 name: setup
-description: One-time setup for the Vocabline plugin. Wires the rotating English/Dutch vocabulary widget into the user's Claude Code status line. Run this once right after installing the plugin, or whenever the user asks to set up, enable, or reconfigure Vocabline.
+description: One-time setup for the Vocabline plugin. Wires the rotating English/Dutch vocabulary widget into the user's Claude Code status line. Run this once right after installing the plugin, or whenever the user asks to set up or enable Vocabline. For changing the rotation speed of an already-set-up widget, use the separate "configure" skill instead.
 disable-model-invocation: true
 allowed-tools: Read, Edit, Write, Bash
 ---

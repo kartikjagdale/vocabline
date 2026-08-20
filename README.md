@@ -5,31 +5,38 @@ phonetic pronunciation, and (where available) an English definition in your
 terminal status line. For example:
 
 ```
-fence → schutting  [skhuting] | a barrier that serves to enclose an area
+thank you → dank je wel  [dahngk-yuh-wehl] | a conversational expression of gratitude
 ```
 
-The word changes every ~25 seconds, cycling through ~20,800 Dutch
-words/phrases before repeating. Works standalone, or as an extra widget line
-inside [ccstatusline](https://github.com/sirmalloc/ccstatusline) if you
-already use it.
+The word changes every 25 seconds by default (configurable, see below),
+cycling through ~20,800 Dutch words/phrases before repeating. Works
+standalone, or as an extra widget line inside
+[ccstatusline](https://github.com/sirmalloc/ccstatusline) if you already
+use it.
 
 ## Install
 
-From inside Claude Code, in any session:
+### Step 1: Add the marketplace
+
+From GitHub:
 
 ```
 /plugin marketplace add kartikjagdale/vocabline
-/plugin install vocabline@vocabline-marketplace
 ```
 
-Or, from a local clone (no GitHub required):
+Or from a local clone (no GitHub required):
 
 ```
 /plugin marketplace add /path/to/vocabline
+```
+
+### Step 2: Install the plugin
+
+```
 /plugin install vocabline@vocabline-marketplace
 ```
 
-Then run the one-time setup command:
+### Step 3: Run setup
 
 ```
 /vocabline:setup
@@ -38,7 +45,25 @@ Then run the one-time setup command:
 This detects whether you use `ccstatusline` or a plain `statusLine`, shows
 you the exact config change, and writes it after you confirm.
 
-## How it works
+That's it. `data/dutch-words.json` ships prebuilt with the plugin, so
+nothing else needs installing or downloading.
+
+## Configuration
+
+Rotation speed defaults to 25 seconds. To change it, run:
+
+```
+/vocabline:configure
+```
+
+Or edit `~/.config/vocabline/config.json` directly:
+
+```json
+{ "intervalSeconds": 15 }
+```
+
+<details>
+<summary><strong>How it works</strong></summary>
 
 **`data/dutch-words.json`**
 
@@ -61,18 +86,20 @@ Reads that file and deterministically picks the current word from
 wall-clock time:
 
 ```
-index = floor(now / 25s) % wordlist.length
+index = floor(now / intervalSeconds) % wordlist.length
 ```
 
 If anything goes wrong, it fails silently instead of leaking an error into
 the status line.
 
-**`SKILL.md`**
+**`skills/setup/SKILL.md`** and **`skills/configure/SKILL.md`**
 
-The `/vocabline:setup` command that wires the script into your status line
-config.
+The `/vocabline:setup` and `/vocabline:configure` commands.
 
-## Regenerating the word list (maintainers only)
+</details>
+
+<details>
+<summary><strong>Regenerating the word list (maintainers only)</strong></summary>
 
 `data/dutch-words.json` already ships prebuilt in this repo, so installing
 the plugin is enough on its own; you never need anything below this point.
@@ -109,3 +136,5 @@ python3 scripts/extract-freedict.py   # regenerate scripts/freedict-words.json
 node scripts/build-wordlist.js        # merge + derive phonetics -> data/dutch-words.json
 python3 scripts/add-meanings.py       # add English definitions from WordNet
 ```
+
+</details>
