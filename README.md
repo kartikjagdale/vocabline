@@ -8,7 +8,7 @@ terminal status line. For example:
 thank you → dank je wel  [dahngk-yuh-wehl] | a conversational expression of gratitude
 ```
 
-The word changes every 35 seconds by default (configurable, see below),
+The word changes every 45 seconds by default (configurable, see below),
 cycling through ~20,800 Dutch words/phrases before repeating. Works
 standalone, or as an extra widget line inside
 [ccstatusline](https://github.com/sirmalloc/ccstatusline) if you already
@@ -50,7 +50,7 @@ nothing else needs installing or downloading.
 
 ## Configuration
 
-Rotation speed defaults to 35 seconds. To change it, run:
+Rotation speed defaults to 45 seconds. To change it, run:
 
 ```
 /vocabline:configure
@@ -59,7 +59,7 @@ Rotation speed defaults to 35 seconds. To change it, run:
 Or edit `~/.config/vocabline/config.json` directly:
 
 ```json
-{ "intervalSeconds": 15 }
+{ "intervalSeconds": 25 }
 ```
 
 <details>
