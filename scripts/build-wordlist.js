@@ -82,10 +82,14 @@ function getIpaBatch(dutchTexts) {
     maxBuffer: 64 * 1024 * 1024,
   });
   const lines = raw.split("\n");
-  // espeak-ng emits exactly one output line per input line.
-  if (lines.length < dutchTexts.length) {
+  if (lines[lines.length - 1] === "") lines.pop(); // trailing newline
+  // espeak-ng is supposed to emit exactly one output line per input line,
+  // but some inputs (e.g. "..." mid-phrase) make it emit an extra line,
+  // which silently misaligns every entry after it rather than failing
+  // loudly - so this must be an exact match, not just "at least as many".
+  if (lines.length !== dutchTexts.length) {
     throw new Error(
-      `espeak-ng output line count (${lines.length}) < input count (${dutchTexts.length})`
+      `espeak-ng output line count (${lines.length}) !== input count (${dutchTexts.length}) - some input produced extra/fewer lines, check for "..." or stray periods in scripts/seed-words.json or scripts/freedict-words.json`
     );
   }
   return lines;

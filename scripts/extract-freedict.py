@@ -49,7 +49,26 @@ def is_junk(word):
         return True
     if word[0].isupper():  # proper nouns (names, nationalities) aren't vocab
         return True
+    if "..." in word or "…" in word:
+        # fill-in-the-blank frame templates, e.g. "bijna ... zijn" - a
+        # syntax pattern, not a word, and espeak-ng treats "..." as a
+        # sentence break, which silently misaligns every phonetic after it
+        # in the batched build step.
+        return True
+    if "," in word:
+        # a couple of FreeDict "headwords" are actually full descriptions,
+        # e.g. "pap van tarwemeel, rozijnen, eieren en suiker" - not vocab.
+        return True
     return False
+
+
+def strip_domain_tag(word):
+    # Some entries annotate which sense with a parenthetical, e.g.
+    # "kwaadaardig (med.)" or "bedriegen (van huwelijkspartner)". The tag
+    # itself is useful context but isn't meant to be pronounced, and its
+    # stray "." can trigger the same espeak-ng sentence-break issue as
+    # "...". Keep the underlying word, drop the annotation.
+    return re.sub(r"\s*\([^)]*\)\s*", "", word).strip()
 
 
 def despace_gloss(gloss):
@@ -75,7 +94,7 @@ def main():
     skipped_no_gloss = 0
     seen = set()
     for entry in g:
-        word = entry.s_word.strip()
+        word = strip_domain_tag(entry.s_word.strip())
         key = word.lower()
         if key in core_words:
             skipped_core += 1
