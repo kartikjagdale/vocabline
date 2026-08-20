@@ -9,10 +9,10 @@ Vocabline's runtime script (`bin/vocabline.js`) reads its rotation interval
 from a small config file at `~/.config/vocabline/config.json`:
 
 ```json
-{ "intervalSeconds": 25 }
+{ "intervalSeconds": 35 }
 ```
 
-If that file doesn't exist, it defaults to 25 seconds.
+If that file doesn't exist, it defaults to 35 seconds.
 
 To change it:
 

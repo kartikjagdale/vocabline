@@ -5,7 +5,7 @@ const fs = require("fs");
 const os = require("os");
 const path = require("path");
 
-const DEFAULT_INTERVAL_SECONDS = 25;
+const DEFAULT_INTERVAL_SECONDS = 35;
 const CONFIG_PATH = path.join(os.homedir(), ".config", "vocabline", "config.json");
 const WORDLIST_PATH = path.join(__dirname, "..", "data", "dutch-words.json");
 

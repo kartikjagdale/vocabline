@@ -59,7 +59,7 @@ Follow these steps:
      "statusLine": {
        "type": "command",
        "command": "node <resolved absolute path>/bin/vocabline.js",
-       "refreshInterval": 25
+       "refreshInterval": 35
      }
      ```
    - Show the diff, get explicit confirmation, back up
@@ -76,7 +76,7 @@ Follow these steps:
    (`node <resolved path>/bin/vocabline.js`) to confirm it prints a line
    like `house → huis  [huys] | a dwelling that serves as living quarters
    for one or more families` with no errors, and tell the user the status
-   line will pick it up on its next refresh (within ~25s, or after
+   line will pick it up on its next refresh (within ~35s, or after
    restarting/reopening their terminal if it doesn't auto-refresh).
 
 If the user later asks to uninstall/undo, restore the `.bak` file you created
